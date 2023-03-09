@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "12345678",
+  "database": "mercado_auto",
+  "entities": ["./src/modules/**/*.entity.ts", "./src/modules/**/*.entity.js"],
+  "autoLoadEntities": true,
+  "migrations": [
+    "./src/database/migrations/*.ts",
+    "./src/database/migrations/*.js"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  },
+  "synchronize": true
+}
